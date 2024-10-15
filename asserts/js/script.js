@@ -26,7 +26,32 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     new Typed('#type-it', {
-        strings: ['Photoghaper', 'Developer','Sorrathorn'],
+        strings: ['Photographer', 'Developer','Sorrathorn.'],
         typeSpeed: 100,
     });
+    new Typed('#type-it1', {
+        strings: ['Portfolio', 'Project','Web'],
+        typeSpeed: 333,
+    });
 });
+// Get the button element
+let mybutton = document.getElementById("myBtn");
+
+// Add scroll event listener
+window.onscroll = function () {
+  scrollFunction();
+};
+
+// Show or hide the button based on scroll position
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.classList.add("show");
+  } else {
+    mybutton.classList.remove("show");
+  }
+}
+
+// Smooth scroll to top when the button is clicked
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
