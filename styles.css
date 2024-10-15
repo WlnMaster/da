@@ -224,7 +224,7 @@ main{
 
 
 .home-image img {
-    --s: 450px;      /* ขนาดของภาพ */
+    --s: 550px;      /* ขนาดของภาพ */
     --b: 8px;        /* ความหนาของขอบ */
     --g: 14px;       /* ช่องว่าง */
     --c: var(--primary-color);    /* สีของขอบ */ 
@@ -301,7 +301,7 @@ main{
 }
 /* Background styling */
 .hero-section {
-    background-image: url('asserts/img/Shproto Screenshot 2024.10.09 - 20.07.26.36.png');
+    background-image: url('asserts/img/IMG_8208.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -316,7 +316,7 @@ main{
 
 /* Overlay for dark effect */
 .overlay {
-    background-color: rgba(255, 241, 228, 0.5); 
+    background-color: rgba(0, 0, 0, 0.418); 
     width: 100%;
     height: 100%;
     display: flex;
@@ -500,4 +500,124 @@ main{
 }
 .underline {
     text-decoration: underline;
+}
+.section {
+    padding: 60px 0;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.performance-text ul {
+    padding: 0;
+    margin: 0;
+}
+
+.performance-text ul li {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+.section {
+    padding: 60px 0;
+}
+
+/* กล่องข้อความพื้นฐาน */
+.content-box {
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out; /* เพิ่มความลื่นไหล */
+}
+
+/* ลูกเล่นเมื่อ Hover */
+.content-box:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อย */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    background-color: #e9ecef; /* เปลี่ยนสีพื้นหลัง */
+}
+
+.post-title {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2.underline {
+    text-decoration: underline;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("");
+
+    /* Add the blur effect */
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* จัดสไตล์พื้นฐาน */
+#credit {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.section-heading h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* กล่องคุณสมบัติ (Skill Box) */
+.feature-box {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* เอฟเฟกต์ Hover */
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ไอคอนภายในกล่อง */
+.feature-box .icon i {
+    font-size: 3rem;
+}
+
+/* พื้นหลังกล่องต่างๆ */
+.bg-1 {
+    background-color: #f0e68c;
+}
+.bg-2 {
+    background-color: #add8e6;
+}
+.bg-3 {
+    background-color: #ffa07a;
+}
+.bg-4 {
+    background-color: #ffe4e1; /* Light Blue */
+}
+
+.bg-5 {
+    background-color: #f08080; /* Light Coral */
 }

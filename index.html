@@ -8,18 +8,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="asserts/js/jquery-3.7.1.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
-<body>
-    <!--Home Section with Image-->
-        <div class="hero-section" id="hero-section">
-            <div class="overlay">
-                <div class="content">
-                    <h1 class="title "></h1>
-                    <h4 class="subtitle">Subheading</h4>
-                </div>
-            </div>
-        </div> 
-    </div>
+<body> 
     <header class="main-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
@@ -31,19 +23,23 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
                     <ul class="navbar-nav mx-auto">
                         <li>
-                            <a href="#home" class="nav-link">Home</a>
+                            <a href="#hero-section" class="nav-link">Home</a>
                         </li>
+                        
                         <li>
                             <a href="#about" class="nav-link">About me</a>
                         </li>
                         <li>
-                            <a href="#services" class="nav-link">Services</a>
+                            <a href="#video" class="nav-link">Video</a>
                         </li>
                         <li>
-                            <a href="#skills" class="nav-link">Skills</a>
+                            <a href="#blogpost" class="nav-link">Blogpost</a>
                         </li>
                         <li>
-                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                            <a href="#performance" class="nav-link">Performance</a>
+                        </li>
+                        <li>
+                            <a href="#credit" class="nav-link">Credit</a>
                         </li>
                     </ul>
                 </div>
@@ -62,9 +58,18 @@
         </nav>
     </header>
     <!--Main-->
-    <main>                   
+    <main>             
+        <!--Home Section with Image-->
+        <div class="hero-section" id="hero-section" >
+            <div class="overlay">
+                <div class="content">
+                    <h1 class="title">I'm a <span id="type-it"></span></h1>
+                    <h4 class="subtitle">Welcome to my Webpage!</h4>
+                </div>
+            </div>
+        </div>        
         <!--Hero Section with Image-->   
-        <section id="home" class="home-section bg-gray">
+        <section id="about" class="home-section bg-gray">
             <div class="container">
                 <div class="row gy-5 align-items-center">
                     <div class="col-lg-6">
@@ -77,7 +82,7 @@
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <div class="home-image text-center  ">
-                            <img src="asserts/img/5.jpg" alt="">
+                            <img src="asserts/img/LINE_ALBUM_61123_231107_1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -85,7 +90,7 @@
         </section>
 
         <!--Home Section with Video-->
-        <section id="video" class="home-section bg-gray">
+        <section id="video" class="home-section ">
             <div class="container">
                 <div class="row gy-5 align-items-center">
                     <div class="col-lg-6 pt-4 pt-lg-0">
@@ -114,7 +119,7 @@
                 <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                     <div class="feature col">
                         <div class="home-image2 text-center">
-                            <img src="asserts/img/2.jpg" alt="Description 1" class="icon-image">
+                            <img src="asserts/img/354530178_116922314744341_4157767989360921273_n.jpg" alt="Description 1" class="icon-image">
                         </div>
                         <h2 class="text-center ">Featured Title 1</h2>
                         <p class="text-center">Some description for feature 1.</p>
@@ -129,7 +134,7 @@
                     </div>              
                     <div class="feature col">
                         <div class="home-image2 text-center">
-                            <img src="asserts/img/2.jpg" alt="Description 1" class="icon-image">
+                            <img src="asserts/img/63519.jpg" alt="Description 1" class="icon-image">
                         </div>
                         <h2 class="text-center">Featured Title 1</h2>
                         <p class="text-center">Some description for feature 1.</p>
@@ -161,31 +166,47 @@
             </div>           
         </section>
         <!--Blog Section-->
-        <section id ="About" class="section">
+        <section id ="blogpost"  class="home-section bg-gray" 
+       >
             <div class="container">
                 <div class="row gy-5 align-items-center ">
                     <div class="col-lg-6 text-center home-image">
-                        <img src="asserts/img/1.jpg" alt="" >
+                        <img src="https://images.nintendolife.com/7ffb1de92879f/unity-logo.large.jpg" alt="" >
                     </div>
-                    <div class="col-lg-6 ps-lg-5">
+                    <div class=" col-lg-6 ps-lg-5">
                         <div class="about-text">
                             <h3 class="h1 mb-3 text-dark fw-semibold underline  ">
-                                Blog
+                                Blogpost
                             </h3>
                             <div class="post">
                                 <p class="post-title">
-                                    1.โดยที่ผมได้รับหน้าที่เป็นการ Train MODEL โดยก่อนที่ผมจะไปทำการ Train 
+                                    1. Unity คืออะไร?  
+                                    เอนจินพัฒนาเกมและแอปข้ามแพลตฟอร์ม รองรับ PC, มือถือ, Console และ VR/AR  
                                 </p>
                                 <p class="post-title">
-                                    2.โดยที่ผมได้รับหน้าที่เป็นการ Train MODEL โดยก่อนที่ผมจะไปทำการ Train 
+                                    2. คุณสมบัติเด่น  
+                                    - พัฒนาเกมได้ทั้ง 2D และ 3D  
+                                    - ใช้งานง่ายสำหรับมือใหม่  
+                                    - รองรับ Cross-Platform ลดเวลาการทำงาน  
+                                    - เขียนโค้ดด้วย C#  
                                 </p>
                                 <p class="post-title">
-                                    3.โดยที่ผมได้รับหน้าที่เป็นการ Train MODEL โดยก่อนที่ผมจะไปทำการ Train 
+                                    3. Asset Store  
+                                    ศูนย์รวมทรัพยากร เช่น โมเดล 3D, สคริปต์, และเสียง ช่วยให้พัฒนาโปรเจกต์ได้ไวขึ้น  
                                 </p>
                                 <p class="post-title">
-                                    
+                                    4. ตัวอย่างการใช้งานจริง  
+                                    - เกมมือถือ: Angry Birds 2  
+                                    - เกม Console: Ori and the Blind Forest  
+                                    - แอป VR/AR: Oculus Rift  
+                                </p>
+                                <p class="post-title">
+                                    5. ข้อดี-ข้อเสีย  
+                                    ข้อดี: รองรับหลายแพลตฟอร์ม, ชุมชนขนาดใหญ่  
+                                    ข้อเสีย: ใช้ทรัพยากรมากในโปรเจกต์ใหญ่, คอร์ส Pro มีค่าใช้จ่ายสูง  
                                 </p>
                             </div>
+                            
                             
                                 
                             
@@ -194,6 +215,116 @@
                 </div>
             </div>
         </section>
+        <!-- หัวข้อ Performance -->
+        <section id="performance"  class="home-section bg-gray bg-image"  >
+            <div class="container ">
+                <div class="row gy-5 justify-content-center align-items-center text-center">
+                    <!-- หัวข้อ Performance -->
+                    <div class="col-lg-12">
+                        <h2 class="h1 mb-4 text-dark fw-semibold underline">Performance</h2>
+                    </div>
+        
+                    <!-- รูปผลงาน -->
+                    <div class="col-lg-8 content-box  ">
+                        <img src="asserts/img/ncsa (1)_page-0001.jpg" 
+                             alt="Project Performance" class="img-fluid rounded shadow">
+                    </div>
+        
+                    <!-- กล่องเนื้อหาผลงาน -->
+                    <div class="col-lg-8 d-flex align-items-center">
+                        <div class="content-box p-4 rounded shadow">
+                            <p class="post-title mb-4">
+                                1. <strong>Unity คืออะไร?</strong>  
+                                เอนจินพัฒนาเกมและแอปข้ามแพลตฟอร์ม รองรับ PC, มือถือ, Console และ VR/AR  
+                            </p>
+                            <p class="post-title mb-4">
+                                2. <strong>คุณสมบัติเด่น</strong>  
+                                - พัฒนาเกมได้ทั้ง 2D และ 3D  
+                                - ใช้งานง่ายสำหรับมือใหม่  
+                                - รองรับ Cross-Platform ลดเวลาการทำงาน  
+                                - เขียนโค้ดด้วย C#  
+                            </p>
+                            <p class="post-title mb-4">
+                                3. <strong>Asset Store</strong>  
+                                ศูนย์รวมทรัพยากร เช่น โมเดล 3D, สคริปต์, และเสียง ช่วยให้พัฒนาโปรเจกต์ได้ไวขึ้น  
+                            </p>
+                            <p class="post-title mb-4">
+                                4. <strong>ตัวอย่างการใช้งานจริง</strong>  
+                                - เกมมือถือ: Angry Birds 2  
+                                - เกม Console: Ori and the Blind Forest  
+                                - แอป VR/AR: Oculus Rift  
+                            </p>
+                            <p class="post-title mb-0">
+                                5. <strong>ข้อดี-ข้อเสีย</strong>  
+                                ข้อดี: รองรับหลายแพลตฟอร์ม, ชุมชนขนาดใหญ่  
+                                ข้อเสีย: ใช้ทรัพยากรมากในโปรเจกต์ใหญ่, คอร์ส Pro มีค่าใช้จ่ายสูง  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="credit" class="section">
+            <div class="container">
+                <div class="row gy-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-heading text-start mb-4">
+                            <h3 class="fw-bold">Credit</h3>
+                        </div>
+        
+                        <div class="skill-box">
+                            <div class="row g-3">
+                                <div class="col-6 col-md-4">
+                                    <div class="feature-box feature-box-small bg-1 text-center">
+                                        <div class="icon mb-2">
+                                            <i class="bx bxl-html5 bx-lg text-danger"></i>
+                                        </div>
+                                        <h6>HTML</h6>
+                                    </div>
+                                </div>
+        
+                                <div class="col-6 col-md-4">
+                                    <div class="feature-box feature-box-small bg-2 text-center">
+                                        <div class="icon mb-2">
+                                            <i class="bx bxl-css3 bx-lg text-primary"></i>
+                                        </div>
+                                        <h6>CSS</h6>
+                                    </div>
+                                </div>
+        
+                                <div class="col-6 col-md-4">
+                                    <div class="feature-box feature-box-small bg-3 text-center">
+                                        <div class="icon mb-2">
+                                            <i class="bx bxl-javascript bx-lg text-warning"></i>
+                                        </div>
+                                        <h6>JavaScript</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="feature-box feature-box-small bg-4 text-center">
+                                        <div class="icon mb-2">
+                                            <i class="bx bxl-jquery bx-lg text-info"></i>
+                                        </div>
+                                        <h6>Jquery</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <div class="feature-box feature-box-small bg-5 text-center">
+                                        <div class="icon mb-2">
+                                            <i class="bx bxl-bootstrap bx-lg text-white"></i>
+                                        </div>
+                                        <h6>Bootstrap</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
     </main>
         
     <!-- Include Bootstrap JS with Popper.js -->

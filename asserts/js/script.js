@@ -23,3 +23,10 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    new Typed('#type-it', {
+        strings: ['Photoghaper', 'Developer','Sorrathorn'],
+        typeSpeed: 100,
+    });
+});
